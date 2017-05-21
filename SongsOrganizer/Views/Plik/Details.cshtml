@@ -1,0 +1,74 @@
+﻿@model Repozytorium.Models.Plik
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Plik</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Typ.Nazwa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Typ.Nazwa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nazwa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nazwa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataDodania)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataDodania)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataAktualizacji)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataAktualizacji)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DostepId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DostepId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tresc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tresc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sciezka)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sciezka)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
